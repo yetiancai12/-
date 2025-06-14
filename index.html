@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025希腊长期居留政策全面解析 | 最新政策与避坑指南</title>
+    <title>2025欧洲移民政策全面对比：希腊 vs 匈牙利 vs 马耳他</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -13,9 +13,9 @@
             font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
         }
         body {
-            background: linear-gradient(135deg, #f8f9fa 0%, #eef2f7 100%);
-            color: #2c3e50;
-            line-height: 1.7;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            color: #333;
+            line-height: 1.6;
             padding-bottom: 40px;
         }
         .container {
@@ -24,29 +24,29 @@
             padding: 20px;
         }
         header {
-            background: linear-gradient(135deg, #0c2461, #1e3799);
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
             color: white;
-            padding: 3rem 0;
+            padding: 2.5rem 0;
             text-align: center;
             border-radius: 0 0 20px 20px;
             margin-bottom: 2rem;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
             position: relative;
             overflow: hidden;
         }
-        header::before {
+        header:before {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,0 100,100 0,100" opacity="0.05"/></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon points="0,100 100,0 100,100" opacity="0.05"/></svg>');
             background-size: cover;
         }
         h1 {
             font-size: 2.8rem;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             position: relative;
             text-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
@@ -57,6 +57,42 @@
             margin: 0 auto;
             font-weight: 300;
             position: relative;
+        }
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            position: relative;
+        }
+        .flag {
+            width: 80px;
+            height: 54px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .flag:hover {
+            transform: translateY(-5px);
+        }
+        .flag.greece {
+            background: linear-gradient(to bottom, #0D5EAF 0%, #0D5EAF 20%, white 20%, white 40%, #0D5EAF 40%, #0D5EAF 60%, white 60%, white 80%, #0D5EAF 80%, #0D5EAF 100%);
+        }
+        .flag.hungary {
+            background: linear-gradient(to bottom, #CD2A3E 0%, #CD2A3E 33%, white 33%, white 66%, #436F4D 66%, #436F4D 100%);
+        }
+        .flag.malta {
+            background: linear-gradient(to right, #CF142B 0%, #CF142B 50%, white 50%, white 100%);
+            position: relative;
+        }
+        .flag.malta:after {
+            content: "✠";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #CF142B;
+            font-size: 24px;
         }
         .last-update {
             background-color: #e3f2fd;
@@ -72,45 +108,93 @@
             justify-content: center;
             gap: 10px;
         }
-        .policy-highlights {
+        .card-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 30px;
             margin-bottom: 3rem;
         }
-        .highlight-card {
+        .card {
             background: white;
-            border-radius: 15px;
-            padding: 2rem;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease;
-        }
-        .highlight-card:hover {
-            transform: translateY(-8px);
-        }
-        .highlight-card h2 {
-            color: #1a237e;
-            margin-bottom: 1.5rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 2px solid #e0e0e0;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
             display: flex;
-            align-items: center;
-            gap: 12px;
+            flex-direction: column;
+            height: 100%;
         }
-        .highlight-card h2 i {
-            font-size: 1.8rem;
-            color: #0c2461;
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            color: white;
+            padding: 1.8rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-header:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: rgba(255,255,255,0.3);
+        }
+        .card.greece .card-header {
+            background: linear-gradient(135deg, #0c2461, #1e3799);
+        }
+        .card.hungary .card-header {
+            background: linear-gradient(135deg, #00695c, #00897b);
+        }
+        .card.malta .card-header {
+            background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+        }
+        .card h2 {
+            font-size: 1.9rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            z-index: 2;
+        }
+        .card-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
         }
         .card-content {
-            padding-left: 10px;
+            padding: 2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-section {
+            margin-bottom: 1.8rem;
+        }
+        .card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 2px solid #f0f0f0;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .card h3 i {
+            font-size: 1.2rem;
+            color: #3498db;
         }
         ul {
             list-style-type: none;
             padding-left: 0;
         }
         li {
-            margin-bottom: 1rem;
-            padding-left: 2rem;
+            margin-bottom: 0.8rem;
+            padding-left: 1.8rem;
             position: relative;
             line-height: 1.7;
         }
@@ -118,35 +202,66 @@
             content: "•";
             position: absolute;
             left: 0;
-            color: #1e3799;
+            color: #3498db;
             font-weight: bold;
-            font-size: 1.8rem;
-            top: -4px;
+            font-size: 1.4rem;
+            top: -2px;
         }
-        .policy-table {
+        .highlight-box {
+            background: linear-gradient(to right, #e3f2fd 0%, #f0f8ff 100%);
+            border-left: 4px solid #2196f3;
+            padding: 1.4rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+            flex-grow: 1;
+        }
+        .highlight-box strong {
+            color: #0d47a1;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 0.8rem;
+        }
+        .comparison {
             background: white;
-            border-radius: 15px;
-            padding: 2.5rem;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+            border-radius: 18px;
+            padding: 2.8rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
             margin-bottom: 3rem;
-            overflow-x: auto;
+        }
+        .comparison h2 {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #1a237e;
+            font-size: 2.2rem;
+            position: relative;
+        }
+        .comparison h2:after {
+            content: "";
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 12px auto 0;
+            border-radius: 2px;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 1.5rem;
-            min-width: 700px;
+            margin-top: 1.8rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
         th {
             background: linear-gradient(to bottom, #2c3e50, #34495e);
             color: white;
             text-align: left;
-            padding: 1.3rem;
+            padding: 1.4rem;
             font-weight: 500;
+            font-size: 1.1rem;
         }
         td {
-            padding: 1.3rem;
+            padding: 1.4rem;
             border-bottom: 1px solid #eee;
+            font-size: 1.05rem;
         }
         tr:nth-child(even) {
             background-color: #f8fafc;
@@ -154,84 +269,84 @@
         tr:hover {
             background-color: #f0f7ff;
         }
-        .risk-section {
-            background: linear-gradient(to right, #fff8e1 0%, #fffde7 100%);
-            border-left: 4px solid #ffc107;
-            padding: 2rem;
-            border-radius: 0 10px 10px 0;
-            margin: 2.5rem 0;
+        .country-highlight {
+            font-weight: 600;
+            color: #1a237e;
         }
-        .risk-section h2 {
-            color: #e65100;
+        .recommendation {
+            background: white;
+            border-radius: 18px;
+            padding: 2.8rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2.5rem;
+        }
+        .rec-header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .rec-header h2 {
+            color: #1a237e;
+            font-size: 2.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .rec-header p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .rec-card {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 1.8rem;
+        }
+        .rec-option {
+            flex: 1;
+            min-width: 300px;
+            background: linear-gradient(to bottom right, #f1f8ff, #e8f4ff);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid #bbdefb;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .rec-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .rec-option h3 {
+            color: #1565c0;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
-            gap: 10px;
+            font-size: 1.5rem;
+            gap: 12px;
         }
-        .case-study {
-            background: white;
-            border-radius: 15px;
-            padding: 2.5rem;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            margin-bottom: 3rem;
+        .rec-option h3:before {
+            content: "★";
+            font-size: 1.8rem;
+            margin-right: 0;
+            color: #ff9800;
         }
-        .timeline {
-            position: relative;
-            max-width: 800px;
-            margin: 2rem auto;
+        .rec-option p {
+            margin-bottom: 1.2rem;
+            line-height: 1.7;
         }
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #3498db;
-            left: 50%;
-            margin-left: -2px;
+        .rec-option strong {
+            color: #0d47a1;
         }
-        .timeline-item {
-            position: relative;
-            width: 50%;
-            padding: 25px 40px;
-            box-sizing: border-box;
+        .note {
+            background: linear-gradient(to right, #fff8e1 0%, #fffde7 100%);
+            border-left: 4px solid #ffc107;
+            padding: 1.4rem;
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+            font-size: 1.05rem;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.03);
         }
-        .timeline-item:nth-child(odd) {
-            left: 0;
-        }
-        .timeline-item:nth-child(even) {
-            left: 50%;
-        }
-        .timeline-content {
-            background: #f8f9fa;
-            padding: 25px;
-            border-radius: 12px;
-            position: relative;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .timeline-content::after {
-            content: '';
-            position: absolute;
-            top: 25px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-        }
-        .timeline-item:nth-child(odd) .timeline-content::after {
-            right: -10px;
-            border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent #f8f9fa;
-        }
-        .timeline-item:nth-child(even) .timeline-content::after {
-            left: -10px;
-            border-width: 10px 10px 10px 0;
-            border-color: transparent #f8f9fa transparent transparent;
-        }
-        .timeline-date {
-            font-weight: bold;
-            color: #1e3799;
-            margin-bottom: 12px;
-            font-size: 1.1rem;
+        .note strong {
+            color: #e65100;
         }
         footer {
             text-align: center;
@@ -241,11 +356,14 @@
             margin-top: 1.5rem;
             border-top: 1px solid #dee2e6;
         }
+        footer p {
+            margin-bottom: 0.5rem;
+        }
         .footer-links {
             display: flex;
             justify-content: center;
             gap: 25px;
-            margin-top: 1.5rem;
+            margin-top: 1.2rem;
         }
         .footer-links a {
             color: #1e3c72;
@@ -259,40 +377,29 @@
             color: #0c2461;
             text-decoration: underline;
         }
-        .note {
-            background-color: #e3f2fd;
-            padding: 1.2rem;
-            border-radius: 8px;
-            margin: 1.5rem 0;
+        .currency-note {
+            text-align: center;
+            margin: 1rem 0 2rem;
             font-size: 0.95rem;
+            color: #555;
+            font-style: italic;
         }
         @media (max-width: 768px) {
-            .policy-highlights {
+            .card-container {
                 grid-template-columns: 1fr;
             }
             h1 {
                 font-size: 2.2rem;
             }
-            .policy-table, .case-study {
+            .comparison, .recommendation {
                 padding: 1.8rem;
             }
-            .timeline::before {
-                left: 30px;
+            .flag-container {
+                gap: 15px;
             }
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-            .timeline-item:nth-child(odd) .timeline-content::after,
-            .timeline-item:nth-child(even) .timeline-content::after {
-                left: -10px;
-                right: auto;
-                border-width: 10px 10px 10px 0;
-                border-color: transparent #f8f9fa transparent transparent;
+            .flag {
+                width: 70px;
+                height: 47px;
             }
         }
         @media (max-width: 480px) {
@@ -300,239 +407,308 @@
                 padding: 2rem 1rem;
             }
             h1 {
-                font-size: 1.9rem;
+                font-size: 1.8rem;
             }
             .subtitle {
                 font-size: 1.1rem;
             }
-        }
-        .section-title {
-            text-align: center;
-            margin: 2.5rem 0;
-            color: #1a237e;
-            position: relative;
-        }
-        .section-title::after {
-            content: "";
-            display: block;
-            width: 80px;
-            height: 4px;
-            background: linear-gradient(to right, #1e3c72, #2a5298);
-            margin: 15px auto 0;
-            border-radius: 2px;
-        }
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 1.5rem;
-        }
-        .benefit-card {
-            background: white;
-            border-radius: 12px;
-            padding: 1.8rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .benefit-card:hover {
-            transform: translateY(-5px);
-        }
-        .benefit-card i {
-            font-size: 2.5rem;
-            color: #1e3799;
-            margin-bottom: 1.2rem;
+            .rec-option {
+                min-width: 100%;
+            }
+            .comparison h2, .rec-header h2 {
+                font-size: 1.8rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>2025希腊长期居留政策全面解析</h1>
-            <p class="subtitle">最新"三轨制"投资政策 · 避坑指南 · 真实案例参考</p>
+            <h1>2025欧洲黄金签证全面解析</h1>
+            <p class="subtitle">希腊、匈牙利、马耳他三国移民政策深度对比与最优路径推荐</p>
+            
+            <div class="flag-container">
+                <div class="flag greece"></div>
+                <div class="flag hungary"></div>
+                <div class="flag malta"></div>
+            </div>
         </header>
 
         <div class="last-update">
             <i class="fas fa-sync-alt"></i>
-            更新日期：2025年6月14日 · 数据来源：希腊移民局官网及权威政策文件
+            更新日期：2025年6月14日 · 数据来源：各国移民局官网及权威机构政策文件
         </div>
 
-        <div class="note">
-            <i class="fas fa-exclamation-circle"></i> 注：2024年9月起希腊实行"三轨制"移民新政，原25万欧元购房政策仅限特定房产类型
+        <div class="currency-note">
+            注：以下人民币金额按1欧元≈7.85元人民币计算，实际成本可能因汇率波动、政府费用调整及律师服务费差异而变化
         </div>
 
-        <div class="policy-highlights">
-            <div class="highlight-card">
-                <h2><i class="fas fa-home"></i> 投资方式</h2>
+        <div class="card-container">
+            <!-- 希腊政策卡片 -->
+            <div class="card greece">
+                <div class="card-header">
+                    <h2><i class="fas fa-home"></i> 希腊移民政策</h2>
+                    <p>2025年三轨并行购房移民政策</p>
+                </div>
                 <div class="card-content">
-                    <ul>
-                        <li><strong>25万欧元"商改住"项目</strong>：商业/工业/酒店改造房产或文物建筑（无区域限制）</li>
-                        <li><strong>40万欧元住宅</strong>：非热门地区，面积≥120㎡（限1套，仅限长期租赁）</li>
-                        <li><strong>80万欧元住宅</strong>：雅典/圣托里尼等热门区域，面积≥120㎡（限1套，仅限长期租赁）</li>
-                        <li><strong>禁止短期出租</strong>：所有投资房产不得用于Airbnb等短租平台</li>
-                    </ul>
+                    <div class="card-section">
+                        <h3><i class="fas fa-euro-sign"></i> 投资方式</h3>
+                        <ul>
+                            <li><strong>购房移民（三轨制）</strong>：
+                                <br>① 热门区域（雅典等）：80万欧元（≈628万人民币）
+                                <br>② 其他地区：40万欧元（≈314万人民币）
+                                <br>③ 商改住/文物建筑：25万欧元（≈196万人民币）
+                            </li>
+                            <li><strong>基金投资</strong>：35万欧元（≈275万人民币）购买希腊房地产基金</li>
+                            <li><strong>银行存款</strong>：50万欧元（≈392万欧元）存入希腊本地银行</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="fas fa-file-alt"></i> 申请要求</h3>
+                        <ul>
+                            <li>主申请人年满18周岁，无犯罪记录</li>
+                            <li>购买希腊医疗保险</li>
+                            <li>房产面积≥120㎡（购房方式），禁止短期出租</li>
+                            <li>至少入境希腊一次完成办理</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <strong>核心优势：</strong>
+                        <ul>
+                            <li>一步到位获得永久居留权，无移民监要求</li>
+                            <li>支持三代移民（主申、配偶、子女、父母）</li>
+                            <li>免签通行29个申根国家</li>
+                            <li>无语言、学历、商业背景要求</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="far fa-clock"></i> 办理周期与续签</h3>
+                        <ul>
+                            <li>审批时间：8-12个月</li>
+                            <li>居留卡有效期：5年（与房产绑定，需持有房产维持身份）</li>
+                            <li>入籍条件：7年内居住满6年，通过希腊语考试</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
-            <div class="highlight-card">
-                <h2><i class="fas fa-user-check"></i> 申请条件</h2>
+            <!-- 匈牙利政策卡片 -->
+            <div class="card hungary">
+                <div class="card-header">
+                    <h2><i class="fas fa-landmark"></i> 匈牙利移民政策</h2>
+                    <p>25万欧元起获10年长居</p>
+                </div>
                 <div class="card-content">
-                    <ul>
-                        <li><strong>主申请人</strong>：年满18周岁非欧盟公民，无犯罪记录</li>
-                        <li><strong>医疗保险</strong>：需购买希腊医疗保险（年费约200欧元）</li>
-                        <li><strong>家庭团聚</strong>：可携带配偶、未成年子女及双方父母</li>
-                        <li><strong>入境要求</strong>：至少1次入境记录完成手续</li>
-                    </ul>
+                    <div class="card-section">
+                        <h3><i class="fas fa-euro-sign"></i> 投资方式</h3>
+                        <ul>
+                            <li><strong>房地产基金</strong>：25万欧元（≈196万人民币），持有5年</li>
+                            <li><strong>房产购置</strong>：50万欧元（≈392万人民币）住宅物业，持有5年</li>
+                            <li><strong>教育捐赠</strong>：100万欧元（≈784万欧元）支持高等教育</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="fas fa-file-alt"></i> 申请要求</h3>
+                        <ul>
+                            <li>主申请人年满18周岁，无犯罪记录</li>
+                            <li>提供资产证明（投资能力）</li>
+                            <li>在匈牙利有居住地址（租房或购房）</li>
+                            <li>入境93天内完成承诺投资</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <strong>核心优势：</strong>
+                        <ul>
+                            <li>先批准后投资，资金安全有保障</li>
+                            <li>首次获得10年长居卡（可续签）</li>
+                            <li>3年可转永居，5年可申请欧盟永居</li>
+                            <li>子女享19年免费公立教育及免费医疗</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="far fa-clock"></i> 办理周期与续签</h3>
+                        <ul>
+                            <li>审批时间：4-6个月（欧盟最快之一）</li>
+                            <li>无居住要求，免移民监</li>
+                            <li>续签条件：持有投资满5年，无犯罪记录</li>
+                            <li>永居条件：连续居住满3年，通过匈语基础考试</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
-            <div class="highlight-card">
-                <h2><i class="fas fa-id-card"></i> 身份权益</h2>
+            <!-- 马耳他政策卡片 -->
+            <div class="card malta">
+                <div class="card-header">
+                    <h2><i class="fas fa-umbrella-beach"></i> 马耳他移民政策</h2>
+                    <p>四代移民的欧盟永居项目</p>
+                </div>
                 <div class="card-content">
-                    <ul>
-                        <li><strong>有效期</strong>：5年永居卡（与房产绑定，续签需维持投资）</li>
-                        <li><strong>居住要求</strong>：无移民监，每5年登陆1次更新居留卡</li>
-                        <li><strong>通行权利</strong>：免签通行29个申根国家</li>
-                        <li><strong>入籍途径</strong>：7年累计住满6年+通过希腊语考试</li>
-                    </ul>
+                    <div class="card-section">
+                        <h3><i class="fas fa-euro-sign"></i> 投资方式</h3>
+                        <ul>
+                            <li><strong>政府捐款</strong>：
+                                <br>① 租房模式：捐款6万欧元（≈47万人民币）
+                                <br>② 购房模式：捐款3万欧元（≈23.5万人民币）
+                            </li>
+                            <li><strong>房产投资</strong>：
+                                <br>① 购房：37.5万欧元（≈294万人民币）以上
+                                <br>② 租房：年租金1.4万欧元（≈11万人民币）以上
+                            </li>
+                            <li><strong>申请费用</strong>：主申4万欧元+每位家属1万欧元</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="fas fa-file-alt"></i> 申请要求</h3>
+                        <ul>
+                            <li>主申请人年满18周岁，非欧盟公民</li>
+                            <li>资产证明：50万欧元（含15万流动资产）或65万欧元（含7.5万流动资产）</li>
+                            <li>全家无犯罪记录，购买医疗保险</li>
+                            <li>通过尽职调查</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <strong>核心优势：</strong>
+                        <ul>
+                            <li>一人申请，四代移民（含祖父母）</li>
+                            <li>英式教育体系，13年免费公立教育</li>
+                            <li>企业所得税低至5%，无遗产税</li>
+                            <li>免签通行申根区，欧盟生活自由</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h3><i class="far fa-clock"></i> 办理周期与续签</h3>
+                        <ul>
+                            <li>审批时间：12-14个月</li>
+                            <li>永久居留权，无续签要求</li>
+                            <li>无移民监，无居住时间限制</li>
+                            <li>入籍条件：7年累计居住满5年，通过语言考试</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="policy-table">
-            <h2 class="section-title">希腊"三轨制"投资政策对比（2025年最新）</h2>
+        <div class="comparison">
+            <h2>三国移民政策全方位对比</h2>
             <table>
                 <tr>
                     <th>比较维度</th>
-                    <th>25万欧元商改住</th>
-                    <th>40万欧元住宅</th>
-                    <th>80万欧元住宅</th>
+                    <th>希腊</th>
+                    <th>匈牙利</th>
+                    <th>马耳他</th>
                 </tr>
                 <tr>
-                    <td><strong>适用区域</strong></td>
-                    <td>希腊全境（无限制）</td>
-                    <td>非热门地区（如伯罗奔尼撒）</td>
-                    <td>雅典/圣托里尼等热门区域</td>
-                </tr>
-                <tr>
-                    <td><strong>房产类型</strong></td>
-                    <td>商业改造/工业厂房/文物建筑</td>
-                    <td>住宅（≥120㎡）</td>
-                    <td>住宅（≥120㎡）</td>
-                </tr>
-                <tr>
-                    <td><strong>房产数量</strong></td>
-                    <td>不限（总价值达标即可）</td>
-                    <td>限1套</td>
-                    <td>限1套</td>
-                </tr>
-                <tr>
-                    <td><strong>额外成本</strong></td>
-                    <td>改造费8%-10%（约2-3万欧）</td>
-                    <td>标准购房税费</td>
-                    <td>标准购房税费</td>
-                </tr>
-                <tr>
-                    <td><strong>出租限制</strong></td>
-                    <td>仅限长期租赁</td>
-                    <td>仅限长期租赁</td>
-                    <td>仅限长期租赁</td>
-                </tr>
-                <tr>
-                    <td><strong>投资风险</strong></td>
-                    <td>需确认开发商资质及改造合法性</td>
-                    <td>普通住宅市场风险</td>
-                    <td>高端房产流动性风险</td>
+                    <td><strong>最低成本（人民币）</strong></td>
+                    <td><span class="country-highlight">196万</span>（商改住购房）</td>
+                    <td><span class="country-highlight">196万</span>（基金投资）</td>
+                    <td><span class="country-highlight">140万起</span>（含捐款+租房+费用）</td>
                 </tr>
                 <tr>
                     <td><strong>办理周期</strong></td>
-                    <td colspan="3">统一流程：2-3个月获批</td>
+                    <td>8-12个月</td>
+                    <td><span class="country-highlight">4-6个月</span>（最快）</td>
+                    <td>12-14个月</td>
+                </tr>
+                <tr>
+                    <td><strong>投资锁定</strong></td>
+                    <td>需永久持有房产</td>
+                    <td>5年（基金/房产）</td>
+                    <td>捐款不可退，房产持有5年</td>
+                </tr>
+                <tr>
+                    <td><strong>移民监</strong></td>
+                    <td>无强制居住要求</td>
+                    <td>无居住要求</td>
+                    <td>无居住要求</td>
+                </tr>
+                <tr>
+                    <td><strong>携带家庭成员</strong></td>
+                    <td>配偶、子女、父母（三代）</td>
+                    <td>配偶、子女、父母（三代）</td>
+                    <td><span class="country-highlight">配偶、子女、父母、祖父母（四代）</span></td>
+                </tr>
+                <tr>
+                    <td><strong>医疗福利</strong></td>
+                    <td>需自购私人保险</td>
+                    <td><span class="country-highlight">全民免费医疗（含投资者）</span></td>
+                    <td>免费公立医疗（WHO排名第5）</td>
+                </tr>
+                <tr>
+                    <td><strong>教育优势</strong></td>
+                    <td>免费公立教育（希腊语）</td>
+                    <td>19年免费公立教育，中匈英三语</td>
+                    <td><span class="country-highlight">英式13年免费教育，对接欧美名校</span></td>
+                </tr>
+                <tr>
+                    <td><strong>主要劣势</strong></td>
+                    <td>房产与身份绑定，不可售</td>
+                    <td>转永居需匈语基础</td>
+                    <td>申请费用高，生活成本较高</td>
                 </tr>
             </table>
         </div>
 
-        <div class="risk-section">
-            <h2><i class="fas fa-exclamation-triangle"></i> 2025年政策风险与避坑指南</h2>
-            <ul>
-                <li><strong>商改住项目陷阱</strong>：文物建筑需1:1原貌修复（成本极高），优先选择商业写字楼改造项目</li>
-                <li><strong>区域混淆陷阱</strong>：部分中介将非热门区包装为"雅典周边"，实际距市中心超50公里</li>
-                <li><strong>短期租赁风险</strong>：新政严禁短租，违规将取消居留资格</li>
-                <li><strong>包租协议陷阱</strong>：承诺年收益＞5%的项目需警惕（希腊长租市场平均回报3-4%）</li>
-                <li><strong>政策关停预警</strong>：欧盟拟2025-2026年全面关闭黄金签证，希腊可能随时关停</li>
-            </ul>
+        <div class="note">
+            <strong>重要提示：</strong>希腊"商改住"项目需符合特定建筑要求，存在项目稀缺性。马耳他2025年政策变动较大，费用上涨且审批趋严。匈牙利基金应选择国家银行注册的合规产品。
         </div>
 
-        <div class="case-study">
-            <h2 class="section-title">真实案例：上海王女士希腊商改住移民路径</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024年10月</div>
-                        <p>委托希腊本土律师审核开发商资质，选定雅典市中心商业改造公寓（总价28万欧元含改造费）</p>
-                    </div>
+        <div class="recommendation">
+            <div class="rec-header">
+                <h2>最优移民路径推荐</h2>
+                <p>基于费用、周期、成功率及政策稳定性的综合评估</p>
+            </div>
+            
+            <div class="rec-card">
+                <div class="rec-option">
+                    <h3>最佳性价比路径：匈牙利基金投资</h3>
+                    <p><strong>适用人群：</strong>预算有限（200万人民币左右），希望快速获得欧盟居留权，无长期居住计划的家庭</p>
+                    <p><strong>方案要点：</strong></p>
+                    <ul>
+                        <li>投资25万欧元房地产基金，持有5年可赎回</li>
+                        <li>4-6个月获批10年长居卡，到期可续签</li>
+                        <li>无移民监，自由通行申根区</li>
+                        <li>3年后满足居住和语言条件可转永居</li>
+                    </ul>
+                    <p><strong>优势：</strong>资金退出灵活，办理速度欧盟最快，子女享免费教育医疗</p>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2024年12月</div>
-                        <p>完成房产过户，签署5年包租协议（年租金收益4%）</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2025年2月</div>
-                        <p>递交移民申请，同步购买全家医疗保险（年费220欧元/人）</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <div class="timeline-date">2025年5月</div>
-                        <p>获批永居卡，子女入读雅典国际学校（学费约8000欧元/年）</p>
-                    </div>
+                
+                <div class="rec-option">
+                    <h3>房产投资者优选：希腊"商改住"项目</h3>
+                    <p><strong>适用人群：</strong>偏好房产投资，希望一步到位获得永居，关注地中海生活环境的申请人</p>
+                    <p><strong>方案要点：</strong></p>
+                    <ul>
+                        <li>投资25万欧元购买特定改造项目房产</li>
+                        <li>一步到位获永久居留（续签需维持房产）</li>
+                        <li>8-12个月完成审批，三代移民</li>
+                        <li>无居住要求，房产可自住或长期出租</li>
+                    </ul>
+                    <p><strong>优势：</strong>欧盟最低购房移民门槛，房产为实体资产，租金回报稳定</p>
                 </div>
             </div>
-        </div>
-
-        <h2 class="section-title">希腊永居核心优势</h2>
-        <div class="benefits-grid">
-            <div class="benefit-card">
-                <i class="fas fa-euro-sign"></i>
-                <h3>低生活成本</h3>
-                <p>三口之家月均消费600欧元，果蔬价格比国内低30%</p>
+            
+            <div class="note">
+                <strong>风险提示：</strong>移民政策可能随时调整，建议在行动前咨询专业移民律师。希腊"商改住"项目需谨慎选择开发商，确保项目符合移民局认可条件。马耳他项目需注意较高的申请费用和尽职调查要求。
             </div>
-            <div class="benefit-card">
-                <i class="fas fa-heartbeat"></i>
-                <h3>优质医疗</h3>
-                <p>人均寿命80.3岁，医保年费220欧覆盖全项目</p>
-            </div>
-            <div class="benefit-card">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>教育跳板</h3>
-                <p>子女可参加华侨生联考（清华录取线降200分）</p>
-            </div>
-            <div class="benefit-card">
-                <i class="fas fa-plane"></i>
-                <h3>自由通行</h3>
-                <p>免签29个申根国，商务旅行无缝衔接</p>
-            </div>
-        </div>
-
-        <div class="risk-section">
-            <h2><i class="fas fa-lightbulb"></i> 操作建议：三类申请人的优选路径</h2>
-            <ul>
-                <li><strong>预算有限者（≤200万人民币）</strong>：选择25万欧商业改造项目，避开文物建筑，优先雅典中心区现房</li>
-                <li><strong>教育规划家庭</strong>：投资40万欧雅典北部学区房（如基菲夏区），享顶级国际学校资源</li>
-                <li><strong>养老需求者</strong>：购买克里特岛80万欧海滨别墅，享受地中海气候+低成本医疗</li>
-            </ul>
         </div>
 
         <footer>
-            <p>© 2025 欧洲移民政策分析中心 · 本资料仅供参考，请以希腊移民局最新官方政策为准</p>
-            <p>数据来源：希腊移民局、希腊驻华使馆、全球移民政策报告（2025）</p>
+            <p>© 2025 欧洲移民政策分析中心 · 本资料仅供参考，请以各国移民局最新官方政策为准</p>
+            <p>数据来源：希腊移民局、匈牙利驻华使馆、马耳他身份局、全球移民政策报告（2025）</p>
             
             <div class="footer-links">
                 <a href="#"><i class="fas fa-globe"></i> 希腊移民局官网</a>
-                <a href="#"><i class="fas fa-file-pdf"></i> 政策文件下载</a>
-                <a href="#"><i class="fas fa-headset"></i> 移民咨询</a>
+                <a href="#"><i class="fas fa-globe"></i> 匈牙利移民官网</a>
+                <a href="#"><i class="fas fa-globe"></i> 马耳他身份局</a>
             </div>
         </footer>
     </div>
